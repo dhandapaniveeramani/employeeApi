@@ -17,9 +17,9 @@ Scenario Outline: Log into employee app with valid user
 	When submit method
 	Then verify status code "<statusCode>"
 Examples:
-    |BasicEndPoint						 |name    |password	|statusCode|
-	|http://localhost:8085/employee/login|dhanda|dhandapass|200	   |
-	|http://localhost:8085/employee/login|dhanda|adm	   |400	   |	
+	| BasicEndPoint                        | name   | password   | statusCode |
+	| http://localhost:8085/employee/login | dhanda | dhandapass | 200        |
+	| http://localhost:8085/employee/login | dhanda | adm        | 401        |
 	
 	
 #Test Logout from employee app 	
