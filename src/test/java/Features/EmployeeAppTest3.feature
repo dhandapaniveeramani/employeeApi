@@ -19,7 +19,7 @@ Scenario Outline: Log into employee app with valid user
 Examples:
 	| BasicEndPoint                        | name   | password   | statusCode |
 	| http://localhost:8085/employee/login | dhanda | dhandapass | 200        |
-	| http://localhost:8085/employee/login | dhanda | adm        | 401        |
+	| http://localhost:8085/employee/login | dhanda | adm        | 403        |
 	
 	
 #Test Logout from employee app 	
